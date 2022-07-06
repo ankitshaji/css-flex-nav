@@ -1,0 +1,22 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  /*6 times parent body*/
+  font-size: 6em;
+  text-align: center;
+}
+
+nav {
+  /*1.5 times parent body*/
+  font-size: 1.5em;
+}
+
+/*default block elements*/
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
