@@ -11,9 +11,12 @@ h1 {
 nav {
   /*1.5 times parent body*/
   font-size: 1.5em;
+  display: flex;
+  /*main axis - 3 elements*/
+  justify-content: space-between;
 }
 
-/*ul,li default block elements*/
+/*ul,li default - block elements to inline*/
 ul,
 li {
   display: inline;
@@ -21,14 +24,33 @@ li {
   padding: 0;
 }
 
-/*landscape phone*/
+ul {
+  border: 1px solid black;
+  /*flex grow - take up space*/
+  flex: 1;
+  /*50 percent of nav container*/
+  max-width: 50%;
+  /*nested flexbox*/
+  display: flex;
+  /*main axis - 3 elements*/
+  justify-content: space-evenly;
+}
+
+/*landscape phone - responsive*/
 @media (max-width: 768px) {
   h1 {
     font-size: 4em;
   }
+  /*Both Elements are using flex box*/
+  nav,
+  nav ul {
+    flex-direction: column;
+    /*cross axis - of column*/
+    align-items: center;
+  }
 }
 
-/*potrait phone*/
+/*potrait phone - responsive*/
 @media (max-width: 576px) {
   h1 {
     font-size: 2.5em;
