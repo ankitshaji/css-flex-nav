@@ -1,11 +1,17 @@
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: rgb(164, 7, 7);
 }
 
 h1 {
   /*6 times parent body*/
   font-size: 6em;
   text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 nav {
@@ -25,7 +31,7 @@ li {
 }
 
 ul {
-  border: 1px solid black;
+  border: 2px solid black;
   /*flex grow - take up space*/
   flex: 1;
   /*50 percent of nav container*/
