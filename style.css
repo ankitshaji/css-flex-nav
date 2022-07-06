@@ -13,10 +13,24 @@ nav {
   font-size: 1.5em;
 }
 
-/*default block elements*/
+/*ul,li default block elements*/
 ul,
 li {
   display: inline;
   margin: 0;
   padding: 0;
+}
+
+/*landscape phone*/
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+/*potrait phone*/
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5em;
+  }
 }
